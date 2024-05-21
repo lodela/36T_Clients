@@ -1,11 +1,11 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import {
   getClients,
   getClientById,
   createClient,
   updateClient,
   deleteClient,
-} from "./Services/ClientService";
+} from "../Services/ClientsService";
 
 export const Clients = () => {
   const [clients, setClients] = useState([]);

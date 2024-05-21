@@ -2,13 +2,15 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { AppNav } from "./Components/AppNav";
 import { Home } from "./Pages/Home";
 import { Clients } from "./Pages/Clients";
+import { Users } from "./Pages/Users";
 export const App = () => {
   return (
     <Router>
       <AppNav />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/users" element={<Clients />} />
+        <Route path="/users" element={<Users />} />
+        <Route path="/clients" element={<Clients />} />
       </Routes>
     </Router>
   );

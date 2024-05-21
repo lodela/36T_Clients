@@ -3,7 +3,7 @@ import cors from "cors";
 import jsonServer from "json-server";
 
 const app = express();
-const router = await jsonServer.router("Mocks/Clients.json");
+const router = await jsonServer.router("./src/Mocks/Clients.json");
 
 app.use(cors());
 app.use(express.json());
