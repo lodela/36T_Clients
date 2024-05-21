@@ -1,23 +1,16 @@
-import { useEffect, useState } from "react";
-import { Table, ButtonGroup, Button } from "react-bootstrap";
-import { MdDeleteForever, MdModeEditOutline } from "react-icons/md";
+import { useEffect, useState } from 'react'
+import { Table, ButtonGroup, Button } from 'react-bootstrap'
+import { MdDeleteForever, MdModeEditOutline } from 'react-icons/md'
 
 export const ClientsTable = ({ data, deleteClient, editClient }) => {
-  const [isLoading, setIsLoading] = useState(true);
-  const [clients, setClients] = useState([]);
+  const [isLoading, setIsLoading] = useState(true)
+  const [clients, setClients] = useState([])
   useEffect(() => {
-    setClients(data);
-  }, [data]);
+    setClients(data)
+  }, [data])
   useEffect(() => {
-    setIsLoading(!isLoading);
-  }, [clients]);
-  const handleAddClient = () => {
-    // Add client logic here
-  };
-  const handleEditClient = async (id) => {
-    let clientToEdit = await clients.find((client) => client.id === id);
-    editClient(clientToEdit);
-  };
+    setIsLoading(!isLoading)
+  }, [clients])
 
   return (
     <Table responsive striped>
@@ -45,10 +38,7 @@ export const ClientsTable = ({ data, deleteClient, editClient }) => {
                 >
                   <MdDeleteForever />
                 </Button>
-                <Button
-                  variant="info"
-                  onClick={() => handleEditClient(client.id)}
-                >
+                <Button variant="primary" onClick={() => editClient(client.id)}>
                   <MdModeEditOutline />
                 </Button>
               </ButtonGroup>
@@ -57,5 +47,5 @@ export const ClientsTable = ({ data, deleteClient, editClient }) => {
         ))}
       </tbody>
     </Table>
-  );
-};
+  )
+}

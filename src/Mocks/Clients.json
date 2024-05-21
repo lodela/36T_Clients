@@ -1,28 +1,11 @@
 {
   "clients": [
     {
-      "ID": "123e4567-e89b-12d3-a456-426655440000",
-      "NombreComercial": "Juan Pérez",
-      "Telefono": "+525555555555",
-      "Correo": "juan.perez@ejemplo.com",
-      "Consecutive": 1,
-      "id": "b74f"
-    },
-    {
-      "ID": "789a0123-4567-89ab-cdef-123456789012",
-      "NombreComercial": "Empresa XYZ",
-      "Telefono": "+525555555556",
-      "Correo": "empresa.xyz@ejemplo.com",
-      "Consecutive": 2,
-      "id": "054a"
-    },
-    {
-      "ID": "abcdefgh-1234-5678-90ab-cdefghijklmn",
+      "id": "180a",
       "NombreComercial": "María García",
-      "Telefono": "+525555555557",
+      "Telefono": "5555555557",
       "Correo": "maria.garcia@ejemplo.com",
-      "Consecutive": 3,
-      "id": "180a"
+      "terms": true
     },
     {
       "ID": "01234567-89ab-cdef-ghijkl-mnopqrstuvw",
@@ -153,18 +136,11 @@
       "id": "1bd1"
     },
     {
-      "ID": "1100ffeedd-ccbbaa99-88776655-44332210",
-      "NombreComercial": "Diana Santos",
-      "Telefono": "+525555555574",
-      "Correo": "diana.santos@ejemplo.com",
-      "Consecutive": 19,
-      "id": "3a8d"
-    },
-    {
       "id": "8879",
-      "NombreComercial": "Norberto Lodela",
+      "NombreComercial": "Norberto Lodela Espinosa",
       "Telefono": "8188005206",
-      "Correo": "lodela.n@gmail.com"
+      "Correo": "lodela.n@gmail.com",
+      "terms": true
     }
   ],
   "posts": [

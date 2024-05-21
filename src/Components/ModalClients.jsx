@@ -1,22 +1,26 @@
-import { useEffect, useState } from "react";
-import Button from "react-bootstrap/Button";
-import Modal from "react-bootstrap/Modal";
+import { useEffect, useState } from 'react'
+import { Button, Modal } from 'react-bootstrap'
+import { ClientForm } from './ClientsForm'
 
-export function ClientsForm({ data, showModal, closeModal }) {
-  const [show, setShow] = useState(false);
-  const [Title, setTitle] = useState("");
-
-  useEffect(() => {
-    showModal ? setShow(true) : setShow(false);
-  }, [showModal]);
+export function ClientsForm({ data, showModal, closeModal, handleData }) {
+  const [action, setAction] = useState('')
+  const [show, setShow] = useState(false)
+  const [Title, setTitle] = useState('')
 
   useEffect(() => {
-    let title = data.id ? `Edit: ${data.NombreComercial}` : "Add a New Client";
-    setTitle(title);
-  }, [data]);
+    showModal ? setShow(true) : setShow(false)
+  }, [showModal])
+
+  useEffect(() => {
+    const title = data.id ? `Edit: ${data.NombreComercial}` : 'Add a New Client'
+    const action = data.id ? 'Update Client' : 'Save New Client'
+    setTitle(title)
+    setAction(action)
+  }, [data])
 
   return (
     <Modal
+      size="lg"
       show={show}
       onHide={(e) => closeModal()}
       backdrop="static"
@@ -26,15 +30,13 @@ export function ClientsForm({ data, showModal, closeModal }) {
         <Modal.Title>{Title}</Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        I will not close if you click outside me. Do not even try to press
-        escape key.
+        <ClientForm
+          data={data}
+          closeModal={closeModal}
+          buttonText={action}
+          handleData={(e) => handleData(e)}
+        />
       </Modal.Body>
-      <Modal.Footer>
-        <Button variant="secondary" onClick={(e) => closeModal(e)}>
-          Close
-        </Button>
-        <Button variant="primary">Understood</Button>
-      </Modal.Footer>
     </Modal>
-  );
+  )
 }

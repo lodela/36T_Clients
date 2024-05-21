@@ -19,7 +19,6 @@ module.exports = {
   settings: { react: { version: '18.2' } },
   plugins: ['react-refresh'],
   rules: {
-    'react/prop-types': RULES.OFF,
     'react/jsx-no-target-blank': RULES.OFF,
     'react-refresh/only-export-components': [
       RULES.WARN,
