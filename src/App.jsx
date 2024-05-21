@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { AppNav } from "./Components/AppNav";
 import { Home } from "./Pages/Home";
 import { Clients } from "./Pages/Clients";
@@ -26,8 +27,18 @@ export const App = () => {
 
 /**
  * 2.- Creación del CRUD
-El objetivo consiste en realizar un crud ( altas, bajas, cambios) de una entidad llamada
+✅ El objetivo consiste en realizar un crud ( altas, bajas, cambios) de una entidad llamada
 cliente accediendo a una api ( descrita más adelante ) , ( se puede utilizar fetch o axios o
 cualquier otra alternativa )
  * 
+✅  La entidad CLIENTE tiene 4 campos: id ( llave primaria autoincrementable) , nombre_comercial ( no puede ser cadena vacía y no nulo) , telefono (no puede ser nulo ) , correo ( tiene que tener formato de correo , no puede ser nulo )  
  */
+
+/** 
+ * 3.- Creacion de la tabla.
+ * Hacer una pantalla con la siguiente url: /clientes, donde se muestre una tabla mostrando la información de los clientes, 
+ * Poner un botón para eliminar los registros y uno para editarlos
+ * Se tiene que agregar un cuadro de búsqueda en la tabla para filtrar por nombre comercial 
+ * A continuación se muestra una idea de lo que se busca ( no tiene que ser igual ) 
+
+*/
