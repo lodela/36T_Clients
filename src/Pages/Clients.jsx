@@ -11,7 +11,9 @@ export const Clients = () => {
   const [clients, setClients] = useState([]);
 
   useEffect(() => {
-    getClients().then((data) => setClients(data));
+    getClients().then((data) => {
+      setClients(data);
+    });
   }, []);
 
   useEffect(() => {
@@ -23,7 +25,7 @@ export const Clients = () => {
       <h1>Clients</h1>
       <ul>
         {clients.map((client) => (
-          <li key={client.id}>{client.name}</li>
+          <li key={client.id}>{client.NombreComercial}</li>
         ))}
       </ul>
     </div>

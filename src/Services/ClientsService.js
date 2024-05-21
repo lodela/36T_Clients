@@ -3,13 +3,15 @@ import { useFetch } from "react-fetch-hook";
 const baseUrl = "http://localhost:3000/clients";
 
 export const getClients = async () => {
-  const { isLoading, data } = useFetch(baseUrl);
-  return isLoading ? [] : data;
+  const options = { method: "GET" };
+  let response = await fetch(baseUrl, options);
+  return response.json();
 };
 
 export const getClientById = async (id) => {
-  const { isLoading, data } = useFetch(`${baseUrl}/${id}`);
-  return isLoading ? null : data;
+  const options = { method: "GET" };
+  let response = await fetch(`${baseUrl}/${id}`, options);
+  return response.json();
 };
 
 export const createClient = async (client) => {
