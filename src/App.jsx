@@ -1,14 +1,14 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { AppNav } from "./Components/AppNav";
 import { Home } from "./Pages/Home";
-import { Users } from "./Pages/Clients";
+import { Clients } from "./Pages/Clients";
 export const App = () => {
   return (
     <Router>
       <AppNav />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/users" element={<Users />} />
+        <Route path="/users" element={<Clients />} />
       </Routes>
     </Router>
   );
@@ -21,3 +21,11 @@ export const App = () => {
     ✅ Se tiene que instalar bootstrap en el proyecto ( cualquier versión )
     ✅ Se tiene que instalar react dom router en el proyecto
 */
+
+/**
+ * 2.- Creación del CRUD
+El objetivo consiste en realizar un crud ( altas, bajas, cambios) de una entidad llamada
+cliente accediendo a una api ( descrita más adelante ) , ( se puede utilizar fetch o axios o
+cualquier otra alternativa )
+ * 
+ */

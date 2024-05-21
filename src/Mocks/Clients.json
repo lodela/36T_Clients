@@ -1,0 +1,162 @@
+{
+  "clients": [
+    {
+      "ID": "123e4567-e89b-12d3-a456-426655440000",
+      "NombreComercial": "Juan Pérez",
+      "Telefono": "+525555555555",
+      "Correo": "juan.perez@ejemplo.com",
+      "Consecutive": 1
+    },
+    {
+      "ID": "789a0123-4567-89ab-cdef-123456789012",
+      "NombreComercial": "Empresa XYZ",
+      "Telefono": "+525555555556",
+      "Correo": "empresa.xyz@ejemplo.com",
+      "Consecutive": 2
+    },
+    {
+      "ID": "abcdefgh-1234-5678-90ab-cdefghijklmn",
+      "NombreComercial": "María García",
+      "Telefono": "+525555555557",
+      "Correo": "maria.garcia@ejemplo.com",
+      "Consecutive": 3
+    },
+    {
+      "ID": "01234567-89ab-cdef-ghijkl-mnopqrstuvw",
+      "NombreComercial": "Pedro López",
+      "Telefono": "+525555555558",
+      "Correo": "pedro.lopez@ejemplo.com",
+      "Consecutive": 4
+    },
+    {
+      "ID": "efghijklmnopqrstuvwxyz-0123456789",
+      "NombreComercial": "Empresa ABC",
+      "Telefono": "+525555555559",
+      "Correo": "empresa.abc@ejemplo.com",
+      "Consecutive": 5
+    },
+    {
+      "ID": "12345678-90ab-cdef-ghijkl-mnopqrstuvwxyz",
+      "NombreComercial": "Ana Gómez",
+      "Telefono": "+525555555560",
+      "Correo": "ana.gomez@ejemplo.com",
+      "Consecutive": 6
+    },
+    {
+      "ID": "abcdefghijklmnopqrstuvwxy-1234567890",
+      "NombreComercial": "Empresa DEF",
+      "Telefono": "+525555555561",
+      "Correo": "empresa.def@ejemplo.com",
+      "Consecutive": 7
+    },
+    {
+      "ID": "09876543-21ab-cdef-ghijkl-mnopqrstuvwxyz",
+      "NombreComercial": "José Martínez",
+      "Telefono": "+525555555562",
+      "Correo": "jose.martinez@ejemplo.com",
+      "Consecutive": 8
+    },
+    {
+      "ID": "fedcba98-7654-3210-ghijkl-mnopqrstuvwxyz",
+      "NombreComercial": "Empresa GHI",
+      "Telefono": "+525555555563",
+      "Correo": "empresa.ghi@ejemplo.com",
+      "Consecutive": 9
+    },
+    {
+      "ID": "11223344-5566-7788-99aabbccdd",
+      "NombreComercial": "Laura Rodríguez",
+      "Telefono": "+525555555564",
+      "Correo": "laura.rodriguez@ejemplo.com",
+      "Consecutive": 10
+    },
+    {
+      "ID": "eeffeedd-ccbbaa99-88776655-44332211",
+      "NombreComercial": "Empresa JKL",
+      "Telefono": "+525555555565",
+      "Correo": "empresa.jkl@ejemplo.com",
+      "Consecutive": 11
+    },
+    {
+      "ID": "33221100-99887766-55443322-1100ffeedd",
+      "NombreComercial": "Sandra Flores",
+      "Telefono": "+525555555566",
+      "Correo": "sandra.flores@ejemplo.com",
+      "Consecutive": 11
+    },
+    {
+      "ID": "ddccbbaa-99887766-55443322-1100ffeefe",
+      "NombreComercial": "Empresa MNO",
+      "Telefono": "+525555555567",
+      "Correo": "empresa.mno@ejemplo.com",
+      "Consecutive": 12
+    },
+    {
+      "ID": "221100ff-eeddccbb-aa998877-66554433",
+      "NombreComercial": "David Hernández",
+      "Telefono": "+525555555568",
+      "Correo": "david.hernandez@ejemplo.com",
+      "Consecutive": 13
+    },
+    {
+      "ID": "ffeeddcc-bbaaddcc-99887766-55443322",
+      "NombreComercial": "Empresa PQR",
+      "Telefono": "+525555555569",
+      "Correo": "empresa.pqr@ejemplo.com",
+      "Consecutive": 14
+    },
+    {
+      "ID": "1100ffeedd-ccbbaa99-88776655-44332211",
+      "NombreComercial": "Isabel Morales",
+      "Telefono": "+525555555570",
+      "Correo": "isabel.morales@ejemplo.com",
+      "Consecutive": 15
+    },
+    {
+      "ID": "ddccbbaa-aa998877-66554433-221100ff",
+      "NombreComercial": "Empresa RST",
+      "Telefono": "+525555555571",
+      "Correo": "empresa.rst@ejemplo.com",
+      "Consecutive": 16
+    },
+    {
+      "ID": "221100ff-ffeeddcc-bbaaddcc-99887766",
+      "NombreComercial": "Carlos Ramírez",
+      "Telefono": "+525555555572",
+      "Correo": "carlos.ramirez@ejemplo.com",
+      "Consecutive": 17
+    },
+    {
+      "ID": "ffeeddcc-99887766-55443322-1100ffeedd",
+      "NombreComercial": "Empresa UVW",
+      "Telefono": "+525555555573",
+      "Correo": "empresa.uvw@ejemplo.com",
+      "Consecutive": 18
+    },
+    {
+      "ID": "1100ffeedd-ccbbaa99-88776655-44332210",
+      "NombreComercial": "Diana Santos",
+      "Telefono": "+525555555574",
+      "Correo": "diana.santos@ejemplo.com",
+      "Consecutive": 19
+    },
+    {
+      "ID": "ddccbbaa-aa998877-66554432-1100ffeef",
+      "NombreComercial": "Empresa XYZ",
+      "Telefono": "+525555555575",
+      "Correo": "empresa.xyz@ejemplo.com",
+      "Consecutive": 20
+    }
+  ],
+  "posts": [
+    { "id": "1", "title": "a title", "views": 100 },
+    { "id": "2", "title": "another title", "views": 200 }
+  ],
+  "comments": [
+    { "id": "1", "text": "a comment about post 1", "postId": "1" },
+    { "id": "2", "text": "another comment about post 1", "postId": "1" }
+  ],
+  "profile": {
+    "name": "Norberto Lodela"
+  }
+}

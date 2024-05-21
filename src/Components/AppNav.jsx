@@ -5,6 +5,7 @@ export const AppNav = () => {
     <>
       <Link to="/" children="Home" />
       <Link to="/users" children="Users" />
+      <Link to="/clients" children="Cients" />
     </>
   );
 };

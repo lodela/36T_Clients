@@ -1,15 +1,31 @@
-import useFetch from "react-fetch-hook";
-export const Users = () => {
-  const { isLoading, data } = useFetch(
-    "https://jsonplaceholder.typicode.com/users"
-  );
-  return isLoading ? (
-    <div>is Loading...</div>
-  ) : (
-    <ul>
-      {data.map((user) => (
-        <li>{user.name}</li>
-      ))}
-    </ul>
+import { useEffect } from "react";
+import {
+  getClients,
+  getClientById,
+  createClient,
+  updateClient,
+  deleteClient,
+} from "./Services/ClientService";
+
+export const Clients = () => {
+  const [clients, setClients] = useState([]);
+
+  useEffect(() => {
+    getClients().then((data) => setClients(data));
+  }, []);
+
+  useEffect(() => {
+    console.log(clients);
+  }, [clients]);
+
+  return (
+    <div>
+      <h1>Clients</h1>
+      <ul>
+        {clients.map((client) => (
+          <li key={client.id}>{client.name}</li>
+        ))}
+      </ul>
+    </div>
   );
 };
