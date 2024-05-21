@@ -146,6 +146,13 @@
       "Telefono": "5432187990",
       "Correo": "lodela@gmail.com",
       "terms": true
+    },
+    {
+      "id": "cdcf7a75-de0b-43ba-803a-ee846a4c8535",
+      "NombreComercial": "hola mundo D",
+      "Telefono": "8188005206",
+      "Correo": "lodela@gmail.com",
+      "terms": true
     }
   ],
   "posts": [
