@@ -8,6 +8,7 @@ import {
 } from '../Services/ClientsService'
 import { ClientsTable } from '../Components/Client.Table'
 import { ClientsForm } from '../Components/ModalClients'
+import { SearchBar } from '../Components/SearchBar'
 
 const initialState = {
   NombreComercial: '',
@@ -19,12 +20,15 @@ export const Clients = () => {
   const [clients, setClients] = useState([])
   const [client, setClient] = useState({ ...initialState })
   const [showModal, setShowModal] = useState(false)
+  const [filteredClients, setFilteredClients] = useState([])
 
-  useEffect(() => {
-    getClients().then((data) => {
-      setClients(data)
-    })
-  }, [])
+  const handleSearch = (searchTerm) => {
+    const filtered = clients.filter((client) =>
+      client.NombreComercial.toLowerCase().includes(searchTerm.toLowerCase()),
+    )
+    setFilteredClients(filtered)
+  }
+
   const handleShow = () => {
     setShowModal(!showModal)
   }
@@ -46,12 +50,11 @@ export const Clients = () => {
     })
   }
   const handleUpdate = (data) => {
-    // const oldClients = clients
+    const oldClients = clients
     updateClient(data).then((res) => {
-      console.log(res)
-      // setClients(
-      //   oldClients.map((client) => (client.id === data.id ? data : client)),
-      // )
+      setClients(
+        oldClients.map((client) => (client.id === res.id ? res : client)),
+      )
     })
   }
   const handleCreate = (data) => {
@@ -62,10 +65,16 @@ export const Clients = () => {
   }
 
   const handleData = (data) => {
-    console.log(client)
     data.id === client.id ? handleUpdate(data) : handleCreate(data)
     handleCloseModal()
   }
+
+  useEffect(() => {
+    getClients().then((data) => {
+      setClients(data)
+      setFilteredClients(data)
+    })
+  }, [])
 
   return (
     <Container>
@@ -73,8 +82,9 @@ export const Clients = () => {
       <Button variant="primary" onClick={() => setShowModal(!showModal)}>
         Add Client
       </Button>
+      <SearchBar onSearch={handleSearch} />
       <ClientsTable
-        data={clients}
+        data={filteredClients}
         deleteClient={(id) => handleDeleteClient(id)}
         editClient={(id) => handleEditClient(id)}
       />

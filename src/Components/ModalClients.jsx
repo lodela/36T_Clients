@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Button, Modal } from 'react-bootstrap'
+import { Modal } from 'react-bootstrap'
 import { ClientForm } from './ClientsForm'
 
 export function ClientsForm({ data, showModal, closeModal, handleData }) {
